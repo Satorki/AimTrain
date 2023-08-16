@@ -3,24 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AimTrain</title>
+    <title>AimTraining ver 0.1</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="ammoAmmoutReload()">
+<body onload="disapearEnemies()">
+    <section id="title">
+        <h1>AimTraining ver 0.1</h1>
+    </section>
     <section id="battleground">
-        <div class="sky"> </div>
-        <div id="battle" onclick="fire()">
-            <img src="./img/barrel1.svg" alt="">
+        
+        <div id="battle" class="battle" onclick="fire()">
+            <div class="enemys1">
+            <div class="enemy1" id="enemy1">
+                <img src="./enemy/ct2.png" alt="">
+            </div>
+            <div class="enemy2" id="enemy2">
+                <img src="./enemy/ct2.png" alt="">
+            </div>
+            <div class="enemy3" id="enemy3">
+                <img src="./enemy/ct1.png" alt="">
+            </div>
+            <div class="enemy4" id="enemy4">
+                <img src="./enemy/ct2.png" alt="">
+            </div>
+            <div class="go" id="go">
+                <img src="./enemy/go1.png" alt="">
+            </div>
         </div>
-        <div class="ground"> </div>
+        
     </section>
 
     <section id="healthAmmo">
-        <div class="health"><img src="./img/heart2.svg" alt=""></div>
-        <div class="armor"><img src="./img/armor1.svg" alt=""></div>
-        <div class="ammo"><img src="./img/bullet1.svg" alt=""></div>
-        <p id="ammoAmmout"></p>
+        <div class="kills"><img src="./ui/kills1.png" alt=""></div>
+        <p id="killsAmmout">0</p>
+        <div class="health"><img src="./ui/heart1.svg" alt=""></div>
+        <p id="healthAmmout">0</p>
+        <div class="armor"><img src="./ui/armor1.svg" alt=""></div>
+        <p id="armorAmmout">0</p>
+        <div class="ammo"><img src="./ui/bullet1.svg" alt=""></div>
+        <p id="ammoAmmout">0</p>
     </section>
+
+    <section id="downSite">
+    <div class="start"><button type="button" onclick="ammoutReload(), enemy(), timerShowStart(), displayEnemies()">START</button></div>
+    <div id="timer">30 sec</div>
+    </section>
+    <footer>
+        <p>Made by Sebastian Kędzierski | sebastian.kedzier@gmail.com</p>
+    </footer>
 </body>
 </html>
