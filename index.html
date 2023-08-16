@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AimTrain</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="ammoAmmoutReload()">
+    <section id="battleground">
+        <div class="sky"> </div>
+        <div id="battle" onclick="fire()">
+            <img src="./img/barrel1.svg" alt="">
+        </div>
+        <div class="ground"> </div>
+    </section>
+
+    <section id="healthAmmo">
+        <div class="health"><img src="./img/heart2.svg" alt=""></div>
+        <div class="armor"><img src="./img/armor1.svg" alt=""></div>
+        <div class="ammo"><img src="./img/bullet1.svg" alt=""></div>
+        <p id="ammoAmmout"></p>
+    </section>
+</body>
+</html>

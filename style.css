@@ -1,0 +1,36 @@
+body {
+    background-color: #272727;
+    margin: 0;
+    font-size: 80px;
+}
+.sky {
+    background-color: #174F6F;
+    width: 1472px;
+    height: 144px;
+    margin: 0 auto 0 auto;
+}
+#battle {
+    background-color: #956D6D;
+    width: 1472px;
+    height: 533px;
+    margin: 0 auto 0 auto;
+}
+.ground {
+    background-color: #2C1818;
+    width: 1472px;
+    height: 144px;
+    margin: 0 auto 0 auto;
+}
+
+#healthAmmo{
+    margin: 0 auto 0 auto;
+    width: 1472px;
+    height: 144px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#healthAmmo img,p {
+    width: 90px;
+    height: 90px;
+}
