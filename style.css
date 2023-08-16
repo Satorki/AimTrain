@@ -30,15 +30,6 @@ body {
     -moz-box-shadow: -1px -5px 24px 0px rgba(66, 68, 90, 1);
     box-shadow: -1px -5px 24px 0px rgba(66, 68, 90, 1);
 }
-#battle:active{ 
-    animation: wiggle 300ms infinite;
-    animation-timing-function: linear;   
-  }
-  @keyframes wiggle {
-    0% { transform: translate(1px, 0); }
-    50% { transform: translate(-1px, 0); }
-    100% { transform: translate(1px, 0); }
-  }
 
 .enemys1 img {
     width: 100%;
