@@ -3,8 +3,7 @@ html {
 }
 
 body {
-    background: rgb(29,16,99);
-    background: radial-gradient(circle, rgba(29,16,99,0.6250875350140056) 13%, rgba(17,17,60,0.6110819327731092) 56%);
+    background-color: #008E9B;
     margin: 0;
 }
 #title,h1 {
@@ -16,20 +15,21 @@ body {
 
 
 
-
-
 /* SECTION BATTLEGROUND AND ENEMY */
 #battle {
     background-image: url(./map/4a.png);
     width: 1025px;
     height: 576px;
+    cursor: url("./ui/crosshair1.png") 20 20,auto;
     margin: 0 auto 0 auto;
-    cursor: crosshair;
     border: solid #008E9B 2px;
     -webkit-box-shadow: -1px -5px 24px 0px rgba(66, 68, 90, 1);
     -moz-box-shadow: -1px -5px 24px 0px rgba(66, 68, 90, 1);
     box-shadow: -1px -5px 24px 0px rgba(66, 68, 90, 1);
 }
+/* #battle:active {
+    cursor: url("./ui/crosshairshoot1.png") 20 20,auto;
+  } */
 
 .enemys1 img {
     width: 100%;
@@ -118,7 +118,6 @@ body {
     font-weight: bold;  
     border: none;
     --c:  #229091; /* the color*/
-  
     box-shadow: 0 0 0 .1em inset var(--c); 
     --_g: linear-gradient(var(--c) 0 0) no-repeat;
     background: 
