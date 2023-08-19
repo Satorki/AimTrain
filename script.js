@@ -19,7 +19,7 @@ ammoutReload = () => {
 // FIRE FUNCTIONS
 fire = () => {
     let x = Math.floor(Math.random() * 3) + 1;
-    let link = "/ui/crosshairshoot" + x + ".png";
+    let link = "./ui/crosshairshoot" + x + ".png";
     ammo = ammo - 1;
     if (ammo < 0) {
         document.getElementById("timer").innerHTML = "Out of ammo";
